@@ -10,8 +10,8 @@ body {
   position: relative;
 }
 .container {
-  width: 500px;
-  height: 500px;
+  min-width: 500px;
+  min-height: 500px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -27,7 +27,7 @@ body {
 }
 
 .header {
-  font-size: 30px;
+  font-size: 32px;
 }
 .sw {
   margin-top: 32px;
@@ -102,9 +102,96 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-color: #fff;
+  background-color: rgb(238, 238, 238);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.438) 0px 4px 6px,
     rgba(0, 0, 0, 0.233) 0px 12px 13px, rgba(0, 0, 0, 0.548) 0px -3px 5px;
   z-index: 5;
 }
+#footer {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 251, 247);
+  border-top: 1px solid rgb(145, 145, 145);
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 760px) {
+  .container {
+    min-width: 350px;
+    min-height: 350px;
+    letter-spacing: 1px;
+  }
+  .header {
+    font-size: 20px;
+  }
+  .content {
+    margin-top: 32px;
+    font-size: 16px;
+  }
+  .time {
+    font-size: 48px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  .btn-container {
+    width: 300px;
+    margin-top: 8px;
+  }
+  .btn {
+    width: 120px;
+    height: 60px;
+    margin: 4px;
+    font-size: 20px;
+  }
+  .ring {
+    width: 400px;
+    height: 400px;
+  }
+  #footer {
+    height: 50px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 560px) {
+  .container {
+    min-width: 320px;
+    min-height: 320px;
+  }
+  .content {
+    margin-top: 26px;
+    font-size: 14px;
+  }
+  .sw {
+    margin-top: 16px;
+  }
+  .time {
+    font-size: 48px;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 12px;
+  }
+  .btn-container {
+    width: 280px;
+    margin-top: 8px;
+  }
+  .btn {
+    width: 120px;
+    height: 45px;
+    margin: 4px;
+    font-size: 20px;
+  }
+  .ring {
+    width: 350px;
+    height: 350px;
+  }
+  .belt {
+    width: 150px;
+  }
+} ;
