@@ -175,11 +175,11 @@ body {
     font-size: 48px;
     padding: 8px;
     border-radius: 4px;
-    margin-top: 12px;
+    margin-top: 20px;
   }
   .btn-container {
     width: 280px;
-    margin-top: 8px;
+    margin-top: 16px;
   }
   .btn {
     width: 120px;

@@ -29,9 +29,11 @@ resetBtn.addEventListener("click", () => {
 
 stopBtn.addEventListener("click", function (e) {
   clearInterval(interval);
-  startBtn.textContent === "start"
-    ? (startBtn.textContent = "resume")
-    : (startBtn.textContent = "start");
+  if (mil > 0) {
+    startBtn.textContent === "start"
+      ? (startBtn.textContent = "resume")
+      : (startBtn.textContent = "start");
+  }
   mil < 10
     ? (millisecond.textContent = "0" + mil)
     : (millisecond.textContent = mil);
