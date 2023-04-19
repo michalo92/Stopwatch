@@ -125,6 +125,7 @@ body {
     min-width: 350px;
     min-height: 350px;
     letter-spacing: 1px;
+    top: 40%;
   }
   .header {
     font-size: 20px;
@@ -151,6 +152,7 @@ body {
   .ring {
     width: 400px;
     height: 400px;
+    top: 40%;
   }
   #footer {
     height: 50px;
